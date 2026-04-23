@@ -5,8 +5,11 @@ import BlockContainer from "./components/BlockContainer";
 function App() {
   return (
     <div className="App">
+      <h3>square.</h3>
       <BlockContainer>
-        <Block />
+        {Array.from({ length: 4000 }).map((_, i) => (
+          <Block key={i} />
+        ))}
       </BlockContainer>
     </div>
   );
