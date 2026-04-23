@@ -1,4 +1,4 @@
-export default colors = [
+const colors = [
   "blue",
   "red",
   "green",
@@ -9,3 +9,5 @@ export default colors = [
   "brown",
   "black",
 ];
+
+export default colors;
