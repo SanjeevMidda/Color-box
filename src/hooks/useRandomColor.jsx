@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import colors from "../data/colors";
 
 const useRandomColor = () => {
   const [colorGenerated, setColorGenerated] = useState("");
 
-  const selectColor = colors[Math.floor(Math.random() * colors.length)];
+  useEffect(() => {
+    const selectColor = colors[Math.floor(Math.random() * colors.length)];
 
-  setColorGenerated(selectColor);
+    setColorGenerated(selectColor);
+  }, []);
 
   return colorGenerated;
 };
