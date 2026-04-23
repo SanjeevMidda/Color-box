@@ -1,8 +1,15 @@
 import "./index.css";
-import useRandomColor from "./hooks/useRandomColor";
+import Block from "./components/Block";
+import BlockContainer from "./components/BlockContainer";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <BlockContainer>
+        <Block />
+      </BlockContainer>
+    </div>
+  );
 }
 
 export default App;

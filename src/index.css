@@ -11,7 +11,14 @@
   align-items: center;
   height: 100dvh;
 }
+
 .block {
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
+}
+
+.blockContainer {
+  width: 70dvw;
+  height: 70dvh;
+  border: 1px solid black;
 }
