@@ -4,7 +4,7 @@ import colors from "../data/colors";
 const useRandomColor = () => {
   const [colorGenerated, setColorGenerated] = useState("");
 
-  const selectColor = Math.floor(Math.random() * colors.length);
+  const selectColor = colors[Math.floor(Math.random() * colors.length)];
 
   setColorGenerated(selectColor);
 
